@@ -1,0 +1,40 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Load icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../javascript/script.js"></script>
+
+    <body>
+        
+        <img id="youtube-icon" src="../Images/Youtube_Icon.png" alt="">
+        <form>
+            <input id="search-bar" placeholder="Search">
+            <button id="btn-search" type="submit"> <i class="fa fa-search"></i> </button>
+        </form>
+        <hr>
+        <select id="players-dropdown" onChange='getPlayerName()'>
+                <option value="Novak">Novak Djokovic</option>
+                <option value="Roger">Roger Federer</option>
+                <option value="Rafael">Rafael Nadal</option>
+
+        </select>
+        <select id="years-dropdown" onChange='dropdown("image", this.value)'>
+                <option value="2021">2021 </option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+
+        </select>
+
+        <div id="slideshow-container">
+            <img id="image" class="picture" src="../Images/Novak_2021.jpeg">
+        </div>
+
+        
+        
+    </body>
+</head>
+
+</html>
